@@ -1,0 +1,299 @@
+////reset css
+//
+//html, body, div, span, applet, object, iframe,
+//h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+//a, abbr, acronym, address, big, cite, code,
+//del, dfn, em, font, img, ins, kbd, q, s, samp,
+//small, strike, strong, sub, sup, tt, var,
+//dl, dt, dd, ol, ul, li,
+//fieldset, form, label, legend,
+//table, caption, tbody, tfoot, thead, tr, th, td {
+//  margin: 0;
+//  padding: 0;
+//  border: 0;
+//  outline: 0;
+//  font-weight: inherit;
+//  font-style: inherit;
+//  font-size: 100%;
+//  font-family: inherit;
+//  vertical-align: baseline;
+//}
+///* remember to define focus styles! */
+//:focus {
+//  outline: 0;
+//}
+//body {
+//  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+//  line-height: 1;
+//  color: black;
+//  background: white;
+//  text-align: center;
+//}
+//ol, ul {
+//  list-style: none;
+//}
+///* tables still need 'cellspacing="0"' in the markup */
+//table {
+//  border-collapse: separate;
+//  border-spacing: 0;
+//}
+//caption, th, td {
+//  text-align: left;
+//  font-weight: normal;
+//}
+//blockquote:before, blockquote:after,
+//q:before, q:after {
+//  content: "";
+//}
+//blockquote, q {
+//  quotes: "" "";
+//}
+
+$backbrowned: #180000;
+$backbrowner: #0f0000;
+$backlit: #e32431;
+$backred: #e32431;
+$cherryBorder: 1px solid #79120f;
+$buttonHighlight: #bccb66;
+$fullWidth: 100%;
+$tableText: #f19399;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+a {
+  @extend .horCenter;
+  img {
+    margin: 0;
+  }
+}
+a:link {
+  @extend .vertCenter;
+  color: $tableText;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff500;
+}
+a:visited {
+  color: #d77900;
+}
+a:active {
+  color: #ff0800;
+}
+body{
+  font-family: "Buxton Sketch", serif;
+  color: $tableText;
+  background-color: $backbrowner;
+  margin: 0;
+}
+button {
+}
+.btn-primary {
+  color: $tableText;
+  background-image: linear-gradient($backbrowner ,$backbrowner);
+  background-color: $backbrowner;
+  border-color: $tableText;
+  padding: 2px;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  @extend .btn-primary;
+  color: $buttonHighlight;
+  background-color: $backlit;
+  background-image: linear-gradient($backlit ,$backlit);
+}
+.btn-primary:hover {
+  @extend .btn-primary.focus;
+}
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+  @extend .btn-primary.focus;
+}
+.buttonAdd {
+  display: flex;
+  align-self: center;
+  margin: 5px;
+}
+.buttonSave {
+  display: flex;
+  align-self: flex-end;
+}
+img {
+  margin:  0 6px 0 0;
+}
+h1 {
+  margin: 0;
+  font-size: 5vh;
+  text-align: center;
+}
+h2 {
+  margin: 0px;
+  font-size: 3vh;
+  //text-align: center;
+}
+h5 {
+  font-size: 6vh;
+}
+textarea {
+  border-color: #00d6b2;
+  background-color: black;
+  height: 4em;
+}
+.addRecipeModal {
+  background-color: $backbrowner;
+}
+.buttonArea {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.buttonAreaTail {
+  @extend .flexcontainer-row;
+  justify-content: center;
+}
+//.center {
+//  width: 50%;
+//}
+.flexcontainer-column {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.flexcontainer-row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.horCenter {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  @extend .vertCenter;
+}
+.modal-container {
+  position: relative;
+  background-color: $backbrowner;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+  background-color: black;
+}
+.modal-content {
+  background-color: $backbrowned;
+}
+.modal-body {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.recipe {
+  margin: 5px;
+  border: $cherryBorder;
+  @include border-radius(5px);
+
+}
+.recipeArea {
+  @extend .flexcontainer-column;
+  //background-color: $backbrowned;
+  width: 100%;
+  height: 100%;
+  float: left;
+  word-wrap: normal;
+  padding: 5px;
+}
+.recipeCollapsed {
+  @extend .recipe;
+  background-color: $backbrowned;
+}
+.recipeDetails {
+  background-color: $backbrowned;
+  width: 100%;
+  padding: 5px;
+}
+.recipeExpanded {
+  @extend .recipe;
+  @extend .flexcontainer-column;
+  background-color: $backbrowned;
+  border-color: #951612;
+  margin: 5px;
+}
+.recipeField {
+  background-color: $backbrowned;
+}
+.recipeTitle {
+  align-self: center;
+  text-align: center;
+  background-color: $backbrowned;
+  width: 100%;
+  padding: 5px;
+  &:hover {
+    background-color: #a31a23;
+    color: $buttonHighlight;
+    //color: $backbrowner;
+  }
+}
+.recipeSubTitle {
+  background-color: $backbrowner;
+  width: 100%;
+  padding: 5px;
+}
+.vertCenter {
+  display: flex;
+  align-items: center;
+}
+#addRecipeModal {
+  //colors everything behind the modal
+  background-color: $backbrowned;
+}
+#banner{
+  @extend .horCenter;
+  @extend .vertCenter;
+  background-color: black;
+  //height: 10vh;
+  width: $fullWidth;
+  border: $cherryBorder;
+  img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+}
+#container{
+  @extend .horCenter;
+  align-items: center;
+  //border: $cherryBorder;
+  width: $fullWidth;
+  margin: 0;
+  padding: 0;
+}
+#listContainer {
+  background-color: #250000;
+  width: 480px;
+  @extend .flexcontainer-column;
+  justify-content: center;
+  align-items: center;
+}
+#recipeList {
+  width: 80%;
+}
+#tableBox {
+  width: $fullWidth;
+  //background-color: blue;
+  border: $cherryBorder;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  border: $cherryBorder;
+}
+

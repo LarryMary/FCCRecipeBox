@@ -1,0 +1,220 @@
+a img {
+  margin: 0; }
+
+a:link {
+  color: #f19399;
+  text-decoration: none; }
+
+a:hover {
+  color: #fff500; }
+
+a:visited {
+  color: #d77900; }
+
+a:active {
+  color: #ff0800; }
+
+body {
+  font-family: "Buxton Sketch", serif;
+  color: #f19399;
+  background-color: #0f0000;
+  margin: 0; }
+
+.btn-primary, .btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.focus:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover {
+  color: #f19399;
+  background-image: linear-gradient(#0f0000, #0f0000);
+  background-color: #0f0000;
+  border-color: #f19399;
+  padding: 2px; }
+
+.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.active.focus,
+.btn-primary.active:hover,
+.btn-primary.focus:active,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:hover {
+  color: #bccb66;
+  background-color: #e32431;
+  background-image: linear-gradient(#e32431, #e32431); }
+
+.buttonAdd {
+  display: flex;
+  align-self: center;
+  margin: 5px; }
+
+.buttonSave {
+  display: flex;
+  align-self: flex-end; }
+
+img {
+  margin: 0 6px 0 0; }
+
+h1 {
+  margin: 0;
+  font-size: 5vh;
+  text-align: center; }
+
+h2 {
+  margin: 0px;
+  font-size: 3vh; }
+
+h5 {
+  font-size: 6vh; }
+
+textarea {
+  border-color: #00d6b2;
+  background-color: black;
+  height: 4em; }
+
+.addRecipeModal {
+  background-color: #0f0000; }
+
+.buttonArea {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px; }
+
+.buttonAreaTail {
+  justify-content: center; }
+
+.flexcontainer-column, .recipeArea, .recipeExpanded, #listContainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+.flexcontainer-row, .buttonAreaTail {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
+.horCenter, a, #banner, #container {
+  display: flex;
+  justify-content: center; }
+
+.modal-container {
+  position: relative;
+  background-color: #0f0000; }
+
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+  background-color: black; }
+
+.modal-content {
+  background-color: #180000; }
+
+.modal-body {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.recipe, .recipeCollapsed, .recipeExpanded {
+  margin: 5px;
+  border: 1px solid #79120f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.recipeArea {
+  width: 100%;
+  height: 100%;
+  float: left;
+  word-wrap: normal;
+  padding: 5px; }
+
+.recipeCollapsed {
+  background-color: #180000; }
+
+.recipeDetails {
+  background-color: #180000;
+  width: 100%;
+  padding: 5px; }
+
+.recipeExpanded {
+  background-color: #180000;
+  border-color: #951612;
+  margin: 5px; }
+
+.recipeField {
+  background-color: #180000; }
+
+.recipeTitle {
+  align-self: center;
+  text-align: center;
+  background-color: #180000;
+  width: 100%;
+  padding: 5px; }
+  .recipeTitle:hover {
+    background-color: #a31a23;
+    color: #bccb66; }
+
+.recipeSubTitle {
+  background-color: #0f0000;
+  width: 100%;
+  padding: 5px; }
+
+.vertCenter, a:link, .logo, #banner {
+  display: flex;
+  align-items: center; }
+
+#addRecipeModal {
+  background-color: #180000; }
+
+#banner {
+  background-color: black;
+  width: 100%;
+  border: 1px solid #79120f; }
+  #banner img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto; }
+
+#container {
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+#listContainer {
+  background-color: #250000;
+  width: 480px;
+  justify-content: center;
+  align-items: center; }
+
+#recipeList {
+  width: 80%; }
+
+#tableBox {
+  width: 100%;
+  border: 1px solid #79120f; }
+
+#title {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #79120f; }
+
+/*# sourceMappingURL=RecipeBox.css.map */
